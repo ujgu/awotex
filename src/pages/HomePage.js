@@ -2,6 +2,7 @@ import React from 'react';
 import "../styles/HomePage.css"
 import Navbar from '../components/Navbar';
 import Particles from "react-tsparticles";
+import Banner from '../components/Banner';
 
 export default function HomePage() {
   return( 
@@ -609,6 +610,7 @@ export default function HomePage() {
   }
       }} />
         <Navbar />
+        <Banner />
         <h1> home page </h1>
       </div>
   )
