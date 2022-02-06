@@ -1,3 +1,97 @@
-h1{
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    width: 98%;
+    /* height: 4rem; */
+    height: auto;
+    background-color: #1f1f1f;
+    color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 1px 15px  #000;
+    opacity: 0.9;
+}
+.logoNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoImg{
+    width:auto;
+    height: 4rem;
+}
+.navItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 1rem;
+    /* background-color: #f831ff; */
+}
+.navItems > a{
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    
+}
+.navItems:hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
+    background-color: #2c2c2c;
+    cursor: pointer;
+}
+.navItems > a:hover{
+    text-decoration-color: #f831ff;
+}
+.navSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.navSearch > input {
+    width: 8rem;
+    height: 1.5rem;
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
     color: #fff;
 }
+.navSearch > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 1.5rem;
+    background-color: #2c2c2c;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+}
+.navSearch > input:focus{
+    outline: none;
+}
+.navSearch > button:hover{
+    background-color: #f831ff;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 699px) {
+    nav {
+      flex-direction: column;
+    }
+    .navItems{
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin-bottom: 0.5rem;
+    }
+  }
