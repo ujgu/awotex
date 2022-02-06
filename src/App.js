@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState, useEffect } from "react";
+import PacmanLoader from "react-spinners/PacmanLoader";
+import awotexLogo from "./assets/images/awotex.png";
+import HomePage from "./pages/HomePage";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {loading ? (
+        <div className="loadingContainer">
+            <img src={awotexLogo} className="loadingLogoImage" alt="loading" />
+        <PacmanLoader loading={loading} size={25} color={"#f831ff"}  />
+        </div>
+      ) : (
+        <HomePage />
+      )}
     </div>
   );
 }
