@@ -10,16 +10,16 @@ export default function Navbar() {
         <img href="/" src={AwotexNav} className="logoImg" alt="awotex logo" />
       </div>
       <div className="navItems margin-left">
+        <a href="/">Home</a>
+      </div>
+      <div className="navItems">
+        <a href="/">Games</a>
+      </div>
+      <div className="navItems">
+        <a href="/">Social</a>
+      </div>
+      <div className="navItems">
         <a href="/">About</a>
-      </div>
-      <div className="navItems">
-        <a href="/">Contact</a>
-      </div>
-      <div className="navItems">
-        <a href="/">Login</a>
-      </div>
-      <div className="navItems">
-        <a href="/">Signup</a>
       </div>
       <div className="navItems">
         <a href="/">Discord</a>

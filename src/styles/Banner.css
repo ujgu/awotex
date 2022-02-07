@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    flex-direction: row;
+    width: 60%;
     height: 300px;
     margin-top: 5rem;
     border-radius: 1rem;
@@ -11,3 +12,84 @@
     z-index: 50;
     opacity: 0.9;
 }
+.banner-logo{
+    display: none;
+}
+
+.banner-left{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: 90%;
+    margin-left: 1rem;
+}
+.banner-left > h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+.banner-left > h1:nth-child(2) {
+    color: #f831ff;
+}
+.banner-right{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    width: 50%;
+    height: 90%;
+    overflow: hidden;
+}
+@media only screen and (max-width: 740px) {
+    .banner{
+      flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .banner-left{
+        width: 80%;
+        height: auto;
+        margin-left: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .banner-right{
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .banner-logo{
+        display: none;
+    }
+  }
+  @media only screen and (min-width: 850px) {      
+    .banner-logo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20%;
+                height: 80%;
+                overflow: hidden;
+                border-radius: 1rem;
+            }
+            .banner-logo > img{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: auto;
+                border-radius: 1rem;
+            }
+            
+  }
+  @media only screen and (max-width: 1550px) {
+      .banner{
+        width: 90%;
+      }
+  }
